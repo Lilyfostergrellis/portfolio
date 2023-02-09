@@ -56,5 +56,15 @@ nav ul li a:hover{
   font-weight: bold;
   padding: 10px 25px;
   border-radius: 30px;
+  transition: transform .4s;
 }
 /*styling for subscribe button*/
+.btn:hover{
+  transform: scale(1.2);
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
