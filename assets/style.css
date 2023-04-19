@@ -20,112 +20,84 @@
   --p-font:1.1rem;
 }
 
-.hero{
-  height: 100vh;
-  width: 100%;
-  background-color: #122C34;
-  background-size: cover;
-  background-position: center;
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
-nav{
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 45px;
-  padding-left: 8%;
-  padding-right: 8%;
+  background: transparent;
+  padding: 25px 15%;
+  transition-duration: .3s;
 }
 
 .logo{
-  color: white;
-  font-size: 35px;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-span{
-  color: #f9004d;
-}
-nav ul li{
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px 25px;
-}
-nav ul li a{
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-nav ul li a:hover{
-  color: #f9004d;
-  transition: .4s;
-}
-/* hover feature added to list items.*/
-
-.btn{
-  background-color: #f9004d;
-  color: white;
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 30px;
-  transition: transform .4s;
-}
-/*styling for subscribe button*/
-.btn:hover{
-  transform: scale(1.2);
-}
-.content{
-  position: absolute;
-  top: 50%;
-  left: 8%;
-  transform: translateY(-50%);
-}
-h1{
-  color: white;
-  margin: 30px, 0px, 20px;
-  font-size: 75px;
-
-}
-h3{
-  color: white;
-  font-size: 25px;
-  margin-bottom: 50px;
-}
-h4{
-  color: #fcfc;
-  letter-spacing: 1px;
+  color: var(--text-color);
   font-size: 20px;
+  font-weight: bold;
 }
 
-.newsletter form{
-  width: 380px;
-  max-width: 100%;
+.navbar{
+  display: flex;
+}
+
+.navbar li {
   position: relative;
 }
-.newsletter form input:first-child{
+
+.navbar a{
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px 10px;
+}
+
+.navbar a::after{
+  content: '';
+  position:absolute;
+  width: 0;
+  height: 2px;
+  background: var(--main-color);
+  left: 0;
+  bottom: -4px;
+  transition: ease .4s;
+}
+
+.navbar a:hover::after{
+  width: 100%;
+}
+
+#menu-icon{
+  font-size: medium;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.h-btn{
+  padding: 0 20px;
+  height: 40px;
   display: inline-block;
-  width: inline-block;
-  padding: 14px 130px 14px 15px;
-
+  line-height: 42px;
+  background: var(--main-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 16px;
+  transition: all .30s;
 }
 
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  text-align: center;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
+.h-btn:hover{
+  transform: translateY(-5px)
 }
