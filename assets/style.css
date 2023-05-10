@@ -10,11 +10,11 @@
 }
 
 :root{
-  --bg-color: #122c34;
+  --bg-color: #112329;
   --second-bg-color: #191919;
   --text-color: #fff;
   --second-color: #c6c9d8bf;
-  --main-color:#f9004d;
+  --main-color:#f4940d;
   --big-font:5.3rem;
   --h2-font:4.2rem;
   --p-font:1.1rem;
@@ -56,7 +56,7 @@ header{
 .navbar a{
   color: var(--text-color);
   font-weight: bold;
-  font-size: 1rem;
+  font-size: medium;
   padding: 20px 10px;
 }
 
@@ -94,7 +94,7 @@ header{
   border-radius: 40px;
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 10px;
   transition: all .30s;
 }
 
@@ -104,11 +104,11 @@ header{
 
 section{
   padding: 120px 15%;
-
+  padding-bottom: 50px;
 }
 
 .home{
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background: "img";
   background-size: cover;
@@ -167,6 +167,10 @@ span{
   right: 1px;
 }
 
+.about h2{
+  font-size: 100px;
+}
+
 .skills{
   display: flex;
   flex-wrap: wrap;
@@ -186,12 +190,69 @@ span{
 }
 
 .card-icon {
-  height: 80px;
+  height: 100px;
   margin-bottom: 20px;
-  width: 80px;
+  width: 100px;
 }
 
 .card-title {
   font-size: 25px;
   margin-bottom: 10px;
 }
+
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  justify-content: center;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 80px;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+  background-color: #191919 ;
+  border-radius: 30px 150px;
+  width: 90vw;
+}
+
+.portfolio-item img {
+  width: 350px;
+  border-radius: 5px;
+  margin-top: 20px;
+  filter: grayscale(70%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.portfolio-title {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.portfolio-description {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #f9004d;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  background-color: #ea356e;
+  border-color: #0062cc;
+  color: #fff;
+}
+
